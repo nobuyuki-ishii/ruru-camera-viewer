@@ -58,7 +58,7 @@
         <td>
         {#each pic.data as data}
           <a class="zoom_list" href="{image_url}/{data}">
-            <img class="img-thumbnail thumbnail" src="{image_url}/{data}" alt="{makeCaption(data)}"/>
+            <img class="img-thumbnail thumbnail" src="{image_url}/{data.replace('.jpg', '_thumbnail.jpg')}" alt="{makeCaption(data)}"/>
           </a>
         {/each}
         </td>
